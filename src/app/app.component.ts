@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TableUsersComponent } from './table-users/table-users.component';
+import { TableAreasComponent } from './table-areas/table-areas.component';
 
 @Component({
   selector: 'app-root',
-  imports: [TableUsersComponent],
+  imports: [TableUsersComponent, TableAreasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

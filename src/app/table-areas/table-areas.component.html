@@ -1,0 +1,18 @@
+<h1>Lista de Areas</h1>
+
+<table border="1" cellpadding="8" cellspacing="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NOMBRE</th>
+      <th>DESCRIPCION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of areas">
+      <td>{{ usuario.id }}</td>
+      <td>{{ usuario.nombre }}</td>
+      <td>{{ usuario.descripcion }}</td>
+    </tr>
+  </tbody>
+</table>
