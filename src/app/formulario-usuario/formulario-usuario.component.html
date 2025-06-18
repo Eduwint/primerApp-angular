@@ -1,0 +1,29 @@
+<h2>Formulario Usuario</h2>
+
+<form (ngSubmit)="enviar()" #formUsuario="ngForm">
+  <label for="nombre">Nombre:</label>
+
+  <input
+    type="text"
+    id="nombre"
+    [(ngModel)]="usuario.nombre"
+    name="nombre"
+    required
+  />
+  <br /><br />
+
+  <!-- Etiqueta y campo de entrada para el correo -->
+  <label for="correo">Correo:</label>
+
+  <!-- Campo de entrada tipo email con validación requerida. -->
+  <input
+    type="email"
+    id="correo"
+    [(ngModel)]="usuario.correo"
+    name="correo"
+    required
+  />
+  <br /><br />
+
+  <button type="submit" [disabled]="!formUsuario.valid">Enviar</button>
+</form>
